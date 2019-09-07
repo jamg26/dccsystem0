@@ -1,10 +1,9 @@
 <?php
-
-session_start();
-
+include 'components/navigation.php';
+include 'styles.php';
 if (isset($_SESSION["user"])) {
     $user = $_SESSION['user'];
-    echo "welcome $user[0], $user[1], $user[2], $user[3] <html><a href='/login.php'>click here</a></html> to logout";
+    echo "<h1>Hello $user[1]";
 } else {
     header('location: login.php');
 }

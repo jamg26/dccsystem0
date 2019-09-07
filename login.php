@@ -1,6 +1,8 @@
 <?php
 session_start();
 session_destroy();
+include 'components/navigation.php';
+include 'styles.php';
 ?>
 <html>
     <head>
